@@ -348,6 +348,15 @@ body {
 .galery.show__slider-galery {
   text-align: center;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-width: 0;
   left: 0;
   top: 0;
@@ -363,7 +372,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 25% 0px 25% 0px;
+  margin: 0 0px 5% 0px;
 }
 
 .slick-track .galery__img {
@@ -371,7 +380,7 @@ body {
 }
 
 .slick-track .galery__img img {
-  max-width: 480px;
+  max-width: 320px;
   min-width: 150px;
 }
 
@@ -401,6 +410,7 @@ body {
 
 .galery__images .slick-arrow {
   display: none;
+  font-size: 0;
 }
 
 .personal {
@@ -735,6 +745,25 @@ body {
     background: url("../img/icon/sl-arrow_l.svg") 0 0 no-repeat;
     left: 10px;
     background-size: 100%;
+  }
+
+  .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0px 5% 0px;
+  }
+
+  .slick-track .galery__img {
+    border: none;
+  }
+
+  .slick-track .galery__img img {
+    max-width: 480px;
+    min-width: 150px;
   }
 
   .reviews__text {
