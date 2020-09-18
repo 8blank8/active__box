@@ -35,6 +35,9 @@ slideGalery.forEach(item => {
          centerMode: true,
          dots: true,
          slidesToShow: 1,
+         speed: 100,
+
+         touchThreshold: 13,
       });
       galery.classList.add('show__slider-galery');
       closeSliderGalery.style.display = 'block';
